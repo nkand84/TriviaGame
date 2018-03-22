@@ -10,6 +10,8 @@ body{
                      rgba(20,20,20, .5), 
                      rgba(20,20,20, .5)),
                      url("../images/sd3.jpg");
+                     background-position: center;
+                     
 }
 .jumbotron{
     background-color:transparent;

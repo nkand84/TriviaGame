@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // no timer required
   stop();
   // when page loads show start button and hide main-div,finish button and result
   $('#main-div').hide();
@@ -6,6 +7,7 @@ $(document).ready(function () {
   $('#result').hide();
   // when start button is clicked
   $('#start-game').click(function () {
+    run();
      // hide the start button
     $('#start-game').hide();
     // show the main div
@@ -15,7 +17,7 @@ $(document).ready(function () {
     //hide the result
     $('#result').hide();
   });
-  // when finish button is clicked 
+  //---------------- when finish button is clicked ---------------------------------
   $('#finish').click(function () {
     //stop the interval timer
     stop();
@@ -23,6 +25,8 @@ $(document).ready(function () {
     $('#start-game').hide();
     $('#main-div').hide();
     $("#finish").hide();
+    //run validate fucntion 
+    validate();
     //show result
     $("#result").show();
   });
@@ -38,24 +42,25 @@ $(document).ready(function () {
       alert("Time Up!");
       // hide main div
       $("#main-div").hide();
+      $("#start-game").hide();
       //calling the validate function 
       validate();
       $("#finish").hide();
       $("#result").show();
     }
   }
+  //stop interval function
   function stop(){
     clearInterval(intervalId);
   }
-  run();
-  //declaring variables
+   //declaring variables
   var correct, incorrect, unanswered;
   correct = 0;
   incorrect = 0;
   unanswered = 0;
-  var number = 60;
+  var number = 50;
   var intervalId;
-  //defining objects
+  //defining an array of questions as objects
   var questions = [
     { question: "1", answer: "B" },
     { question: "2", answer: "C" },
@@ -64,11 +69,9 @@ $(document).ready(function () {
     { question: "5", answer: "C" },
     { question: "6", answer: "B" }
   ];
-
+ // empty array to capture the answers
   var finalArray = [];
-  $("#finish").click(function () {
-    validate();
-  });
+  //validate function 
   function validate() {
     //Loop over all questoins
     $(".form-page").each(function () {
@@ -105,9 +108,9 @@ $(document).ready(function () {
       }
     }
 
-    $("#result").append("<p>" + "correct: " + correct + "</p>");
-    $("#result").append("<p>" + "unanswered: " + unanswered + "</p>");
-    $("#result").append("<p>" + "incorrect: " + incorrect + "</p>");
+    $("#result").append("<p>" + "Correct: " + correct + "</p>");
+    $("#result").append("<p>" + "Unanswered: " + unanswered + "</p>");
+    $("#result").append("<p>" + "Incorrect: " + incorrect + "</p>");
 
   }
 
