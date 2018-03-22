@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url("../images/sd3.jpg");
+}
+.jumbotron{
+    background-color:transparent;
+    color: #fff;
+}
+h1{
+    background: -webkit-linear-gradient(rgba(248, 202, 49, 0.925), rgba(252, 98, 8, 0.432));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+button{
+    width:100px;
+    height:50px;
+    font-size:25px !important;
+    font-weight: 600 !important;
+    background-color: rgba(250, 195, 114, 0.925) !important;
+    border:transparent !important;
+    color: rgb(80, 78, 75) !important;
+}
+.panel-heading{
+    background-color:rgba(148, 129, 104, 0.925) !important ;
+}
+
+.half-panel{
+    width: 250px;
+    margin:0 auto;
+}
+#timer{
+    font-weight:700;
+}
+#result{
+    background-color:rgba(204, 159, 91, 0.925) ;
+    height:200px;
+    padding: 50px;
+    margin-bottom: 30px;
+    color: rgb(31, 29, 28);
+    font-size:20px;
+    font-weight: 500;
+    border-radius:30px;
+}
+.row{
+    width:50%;
+    margin:0 auto;
+}

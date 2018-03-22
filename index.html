@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang='en-us'>
+
+<head>
+
+    <meta charset='UTF-8'>
+    <title>All about San diego</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7'
+        crossorigin='anonymous'>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Bootstrap Container will hold everything. -->
+    <div class='container'>
+
+        <!-- Jumbotron holds the title section. -->
+        <div class='jumbotron text-center'>
+
+            <h1>True San Diegan Trivia</h1>
+
+        </div>
+        <div class="row text-center">
+            <button class="btn btn-default" id="start-game">Start!</button>
+        </div>
+        <br>
+    </div>
+    <div class="container text-center" id="main-div">
+        <div class='panel panel-default half-panel'>
+            <h3 id="time-remain">Time Remaining:
+                <span id="timer"> </span>
+            </h3>
+        </div>
+        <br>
+
+        <div class='row'>
+            <div class='panel panel-default'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title' id="q1">
+                        <strong>1. In which year did Juan Cabrillo arrive in San Diego?</strong>
+                    </h3>
+                </div>
+                <div class='panel-body'>
+                    <form action="" class="form-page" id="1">
+                        <input type="radio" name='option' id="radio-1" value="A"> 1492
+                        <input type="radio" name='option' id="radio-2" value="B"> 1542
+                        <input type="radio" name='option' id="radio-3" value="C"> 1849
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='panel panel-default'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>
+                        <strong>2. Where is San Diego ranked in terms of safety?</strong>
+                    </h3>
+                </div>
+                <div class='panel-body'>
+                    <form action="" class="form-page" id="2">
+                        <input type="radio" name='option' value="A"> first place
+                        <input type="radio" name='option' value="B"> third place
+                        <input type="radio" name='option' value="C"> sixth place
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='panel panel-default'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>
+                        <strong>3. Approximately how many people live in San Diego?</strong>
+                    </h3>
+                </div>
+                <div class='panel-body'>
+                    <form action="" class="form-page" id="3">
+                        <input type="radio" name="option" value="A"> 1.2 million
+                        <input type="radio" name="option" value="B"> 2.1 million
+                        <input type="radio" name="option" value="C"> 12 million
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='panel panel-default'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>
+                        <strong>4. How many miles of coast does San Diego have?</strong>
+                    </h3>
+                </div>
+                <div class='panel-body'>
+                    <form action="" class="form-page" id="4">
+                        <input type="radio" name="option" value="A"> 30
+                        <input type="radio" name="option" value="B"> 50
+                        <input type="radio" name="option" value="C"> 70
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='panel panel-default'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>
+                        <strong>5. What is the average temperature in San Diego?</strong>
+                    </h3>
+                </div>
+                <div class='panel-body'>
+                    <form action="" class="form-page" id="5">
+                        <input type="radio" name="option" value="A"> 50 degrees
+                        <input type="radio" name="option" value="B"> 70 degrees
+                        <input type="radio" name="option" value="C"> 90 degrees
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='panel panel-default'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'>
+                        <strong>6. During which months are the beaches of San Diego overcast?</strong>
+                    </h3>
+                </div>
+                <div class='panel-body'>
+                    <form action="" class="form-page" id="6">
+                        <input type="radio" name="option" value="A"> December and January
+                        <input type="radio" name="option" value="B"> May and June
+                        <input type="radio" name="option" value="C"> September and October
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+    <div class="row text-center">
+        <button id="finish" class="btn btn-default text-center" value="get-value">Submit</button>
+
+        <div id="result" class="text-center">
+          <p>Your Result:</p>
+        </div>
+    </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Adds a link to the JavaScript file. Loaded at the bottom so it waits for the HTML content to display first. If you put this at the top it will crash, because the HTML IDs won't exist yet.-->
+    <script src='assets/javascript/app.js'></script>
+
+</body>
+
+</html>
