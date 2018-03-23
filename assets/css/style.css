@@ -31,6 +31,7 @@ button{
     background-color: rgba(250, 195, 114, 0.925) !important;
     border:transparent !important;
     color: rgb(80, 78, 75) !important;
+    opacity:0.5 !important;
 }
 .panel-heading{
     background-color:rgba(148, 129, 104, 0.925) !important ;
