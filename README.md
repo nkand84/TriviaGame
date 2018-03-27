@@ -8,5 +8,5 @@ Game Rules:
 - The game ends when the time runs out. 
 - The page will reveal the number of questions that player answers correctly, incorrectly and also displays unanswered.
 
-![alt text](screenshots/Trivia-Sandiego.jpg "Trivia Game about San Diego")
+![alt text](images/Trivia-Sandiego.jpg "Trivia Game about San Diego")
 
