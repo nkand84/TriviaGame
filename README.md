@@ -1,5 +1,6 @@
 # TriviaGame
-Trivia Game about sunny city San Diego 
+Trivia game using JavaScript for the logic and jQuery to manipulate HTML.
+(Trivia Game about sunny city San Diego)
 
 
 Game Rules:
